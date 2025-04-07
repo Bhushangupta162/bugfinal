@@ -38,3 +38,7 @@ def download_pdf(filename: str):
     if os.path.exists(file_path):
         return FileResponse(path=file_path, media_type='application/pdf', filename=filename)
     return {"error": "File not found"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
