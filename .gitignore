@@ -1,0 +1,10 @@
+# Ignore runtime files
+jobs.json
+repo_code/
+reports/
+.env
+__pycache__/
+*.pyc
+
+# Ignore Python venv
+venv/
