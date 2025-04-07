@@ -21,7 +21,7 @@ def clean_directories():
         else:
             print(f"⚠️ {path} not found. Skipping...")
 
-    clean_jobs_file()
+    # clean_jobs_file()
     print("✅ Cleanup completed.")
 
 def clean_jobs_file():
